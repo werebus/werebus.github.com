@@ -112,12 +112,12 @@ html {
 
 /* line 19, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/html5-boilerplate-0.3.0/stylesheets/html5-boilerplate/_styles.scss */
 a, a:active, a:visited {
-  color: #607890;
+  color: #2255ee;
 }
 
 /* line 20, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/html5-boilerplate-0.3.0/stylesheets/html5-boilerplate/_styles.scss */
 a:hover {
-  color: #003366;
+  color: #2255ee;
 }
 
 /* line 22, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/html5-boilerplate-0.3.0/stylesheets/html5-boilerplate/_styles.scss */
@@ -202,21 +202,21 @@ button, input, select, textarea {
 
 /* line 96, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/html5-boilerplate-0.3.0/stylesheets/html5-boilerplate/_styles.scss */
 ::-moz-selection {
-  background: #ff5e99;
+  background: #ff24c5;
   color: white;
   text-shadow: none;
 }
 
 /* line 97, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/html5-boilerplate-0.3.0/stylesheets/html5-boilerplate/_styles.scss */
 ::selection {
-  background: #ff5e99;
+  background: #ff24c5;
   color: white;
   text-shadow: none;
 }
 
 /* line 102, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/html5-boilerplate-0.3.0/stylesheets/html5-boilerplate/_styles.scss */
 a:link {
-  -webkit-tap-highlight-color: #ff5e99;
+  -webkit-tap-highlight-color: #ff24c5;
 }
 
 /* line 113, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/html5-boilerplate-0.3.0/stylesheets/html5-boilerplate/_styles.scss */
@@ -283,22 +283,22 @@ nav ul, nav li {
   visibility: hidden;
 }
 
-/* line 8, ../src/partials/_page.scss */
+/* line 10, ../src/partials/_page.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* line 14, ../src/partials/_page.scss */
+/* line 16, ../src/partials/_page.scss */
 strong, th {
   font-weight: bold;
 }
 
-/* line 18, ../src/partials/_page.scss */
+/* line 20, ../src/partials/_page.scss */
 small {
   font-size: 85%;
 }
 
-/* line 27, ../src/partials/_page.scss */
+/* line 29, ../src/partials/_page.scss */
 input:invalid, textarea:invalid {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
@@ -312,10 +312,78 @@ input:invalid, textarea:invalid {
   box-shadow: red 0 0 5px 0;
 }
 
-/* line 32, ../src/partials/_page.scss */
+/* line 34, ../src/partials/_page.scss */
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
   background-color: #f0dddd;
+}
+
+/* line 10, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#wrap {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -150px;
+}
+/* line 18, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#wrap #wrap-footer {
+  height: 150px;
+}
+
+/* line 20, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 150px;
+}
+
+/* line 41, ../src/partials/_page.scss */
+body {
+  background: #6186FF;
+}
+
+/* line 47, ../src/partials/_page.scss */
+#wrap {
+  -moz-border-radius-topleft: 30;
+  -webkit-border-top-left-radius: 30;
+  -o-border-top-left-radius: 30;
+  -ms-border-top-left-radius: 30;
+  -khtml-border-top-left-radius: 30;
+  border-top-left-radius: 30;
+  -moz-border-radius-topright: 30;
+  -webkit-border-top-right-radius: 30;
+  -o-border-top-right-radius: 30;
+  -ms-border-top-right-radius: 30;
+  -khtml-border-top-right-radius: 30;
+  border-top-right-radius: 30;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+/* line 54, ../src/partials/_page.scss */
+#main {
+  background: #FFD;
+}
+
+/* line 58, ../src/partials/_page.scss */
+footer {
+  background: #555;
+}
+
+/* line 62, ../src/partials/_page.scss */
+a {
+  text-decoration: none;
+}
+/* line 4, ../../../.rvm/gems/ruby-1.8.7-p334@compass/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+a:hover {
+  text-decoration: underline;
 }
 
 @media print {

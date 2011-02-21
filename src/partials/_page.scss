@@ -1,4 +1,6 @@
 @import "compass/css3";
+@import "compass/layout/sticky-footer";
+@import "compass/utilities/links/hover-link";
 
 //-----------------------------------------------
 // The following html5-boilerplate styles should
@@ -31,17 +33,32 @@ input:invalid, textarea:invalid {
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
+@include sticky-footer(150px, "#wrap", "#wrap-footer", "#footer");
 
-body {}
-
-#container {}
+body {
+  background: #6186FF;
+}
 
 header {}
 
-#main {}
+#wrap {
+  @include border-top-radius(30);
+  margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
 
-footer {}
+#main {
+  background: #FFD;
+}
+
+footer {
+  background: #555;
+}
+
+a{
+  @include hover-link;
+}
