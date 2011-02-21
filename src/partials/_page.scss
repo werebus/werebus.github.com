@@ -39,6 +39,7 @@ input:invalid, textarea:invalid {
 @include sticky-footer(150px, "#wrap", "#wrap-footer", "#footer");
 
 body {
+  font-family: "Sansumi", sans-serif;
   background: #6186FF;
 }
 
