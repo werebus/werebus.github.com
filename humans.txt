@@ -6,7 +6,7 @@
   Author: Matt Moretti
   Site: http://wereb.us
   Twitter: werebus
-  Location: Western Massachusetts, US
+  Location: Turners Falls, MA, US
 
 /* THANKS */
   Names (& URL): 
