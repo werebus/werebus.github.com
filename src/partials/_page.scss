@@ -36,7 +36,12 @@ input:invalid, textarea:invalid {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-@include sticky-footer(150px, "#wrap", "#wrap-footer", "#footer");
+$footer-height: 120px;
+$body-radius: 20px;
+
+$cream: hsl(50, 100%, 95%);
+
+@include sticky-footer($footer-height, "#wrap", "#wrap-footer", "#footer");
 
 body {
   font-family: sans-serif;
@@ -47,18 +52,28 @@ header {}
 
 #wrap {
   margin-left: auto;
-	margin-right: auto;
-	width: 960px;
+  margin-right: auto;
+  width: 960px;
+  #wrap-footer {
+    height: $footer-height - $body-radius;
+  }
 }
 
 #main {
-  @include border-top-radius(20px);
-  padding: 5px 10px;
-  background: hsl(50, 100%, 95%);
+  @include border-radius($body-radius);
+  padding: $body-radius ($body-radius - 10px);
+  background: $cream;
 }
 
 footer {
   background: #555;
+}
+
+#copyright {
+  color: $cream;
+  position: absolute;
+  bottom: 1ex;
+  right: 2em;
 }
 
 a{

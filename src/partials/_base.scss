@@ -8,16 +8,16 @@ $base-line-height: 1.231;  // default line-height for YUI fonts
 
 $font-color: #444;
 
-$link-color: #25E;
+$link-color: hsl(210, 90%, 50%);
 
-$link-hover-color: #25E;
+$link-hover-color: $link-color;
 
-$link-active-color: #9EB5FF;
+$link-active-color: $link-color;
 
-$link-visited-color: #9EB5FF;
+$link-visited-color: $link-color;
 
 $selected-font-color: #fff;  // color for selected text
 
-$selected-background-color: #FF24C5;  // bg-color for selected text
+$selected-background-color: hsl(10, 90%, 75%);  // bg-color for selected text
 
 $list-left-margin: 2em;  // left margin for ul an ol
