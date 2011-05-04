@@ -2,7 +2,9 @@
 
 @import "compass/css3";
 @import "compass/layout/sticky-footer";
-@import "compass/utilities/links/hover-link";
+@import "compass/typography/links/hover-link";
+@import "compass/utilities/general/min";
+@import "compass/typography/lists/horizontal-list";
 
 //-----------------------------------------------
 // The following html5-boilerplate styles should
@@ -30,7 +32,7 @@ small {
 input:valid, textarea:valid {}
 input:invalid, textarea:invalid {
   @include border-radius(1px);
-  @include box-shadow(red, 0, 0, 5px, 0);
+  @include box-shadow(red 0 0 5px 0);
 }
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
@@ -55,7 +57,7 @@ header {}
 #wrap {
   margin-left: auto;
   margin-right: auto;
-  width: 960px;
+  max-width: 960px;
   #wrap-footer {
     height: $footer-height - $body-radius;
   }
@@ -65,10 +67,31 @@ header {}
   @include border-radius($body-radius);
   padding: $body-radius ($body-radius - 10px);
   background: $cream;
+  position: relative;
+  z-index: -1;
+  @include min-height(120px);  //gravitar height
+}
+
+#gravatar {
+  img {
+    @include box-shadow(#333 0px 0px 10px);
+  }
+  position: absolute;
+  top: $body-radius;
+  right: $body-radius;
 }
 
 footer {
   background: #555;
+}
+
+#badges {
+  ul {
+    @include horizontal-list;
+  }
+  position: absolute;
+  bottom: 1ex;
+  left: 2em;
 }
 
 #copyright {
