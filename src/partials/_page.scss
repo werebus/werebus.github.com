@@ -68,7 +68,6 @@ header {}
   padding: $body-radius ($body-radius - 10px);
   background: $cream;
   position: relative;
-  z-index: -1;
   @include min-height(120px);  //gravitar height
 }
 
@@ -81,7 +80,7 @@ header {}
   right: $body-radius;
 }
 
-footer {
+#footer {
   background: #555;
 }
 
