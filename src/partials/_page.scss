@@ -72,9 +72,7 @@ header {}
 }
 
 #gravatar {
-  img {
-    @include box-shadow(#333 0px 0px 10px);
-  }
+  @include box-shadow(#333 0px 0px 10px);
   position: absolute;
   top: $body-radius;
   right: $body-radius;
